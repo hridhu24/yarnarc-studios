@@ -1,18 +1,29 @@
-# React + Vite
+# YarnArc Studios 🧶✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+YarnArc Studios is a **personal crochet portfolio website** built with **React** and **Tailwind CSS**.  
+It showcases my crochet creations with modern design, smooth animations, and parallax effects for an immersive experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Beautiful **Hero section** with parallax effect
+- **Portfolio gallery** to showcase crochet projects
+- **About Me** section with personal info
+- **Contact form** for inquiries
+- Fully **responsive design** for mobile and desktop
+- Modern **React + Tailwind UI components** and animations
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠 Tech Stack
+- **Frontend:** React, Tailwind CSS  
+- **Parallax Effects:** react-scroll-parallax  
+- **Deployment:** Vercel / Netlify  
+- **Version Control:** Git & GitHub  
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚡ Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/hridhu24/yarnarc-studios.git
