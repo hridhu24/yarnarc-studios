@@ -1,40 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hero from "./Hero";
-import About from "./About";
-import Card from './Card';
-import LikeButton from './LikeButton';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
 
 function App() {
-  const [showAbout, setShowAbout] = useState(true);
-
   return (
-    <div>
-      <Hero />
-      <br></br>
-      {/* Button to toggle About section */}
-      <button onClick={() => setShowAbout(!showAbout)}>
-        {showAbout ? "Hide About" : "Show About"}
-      </button>
-
-      {/* Conditionally render About */}
-      {showAbout && <About />}
-      <Card 
-        image="https://via.placeholder.com/200"
-        title="Crochet Doll"
-        description="Handmade amigurumi doll with cotton yarn"
-      />
-      <LikeButton />
-      <Card 
-        image="https://via.placeholder.com/200"
-        title="Crochet Bag"
-        description="Stylish crochet tote bag"
-      />
-      <LikeButton />
-    </div>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
